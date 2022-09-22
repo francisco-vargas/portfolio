@@ -26,20 +26,23 @@ body {
   font-size: 15px;
   line-height: 1.5;
 }
+h1, h2 {
+     font-family: 'Montserrat', sans-serif;
+     margin:0;
+}
 h1 {
-     font-size: 100px;
+     font-size: 80px;
      line-height: 1;
+     font-weight: 800;
 }
 h2 {
      font-size: 45px;
+     font-weight: 200;
 }
-h1, h2 {
-  font-family: "Ubuntu" sans-serif;
-  font-weight: 400;
-  margin:0;
-}
+
 h3 {
   font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
 }
 header h1 {
     text-shadow: 2px 3px black;
