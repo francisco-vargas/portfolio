@@ -1,7 +1,6 @@
 /* Global styles
 ------------------------------------*/
 html {
-  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 *,
@@ -32,9 +31,7 @@ h1 {
 h2 {
   font-size: 45px;
 }
-
 h3 {
-  font-family: "Montserrat", sans-serif;
   font-size: 20px;
 }
 header {
@@ -66,20 +63,16 @@ a {
 .item-details h3 + p {
   font-style: italic;
 }
-
 .item-details h3 ~ p {
   margin: 0;
 }
-
 .divider > section {
   border-bottom: 1px dashed #343434;
   padding: 25px 0;
 }
-
 .divider > section:last-of-type {
   border-bottom: none;
 }
-
 .align-right {
   text-align: right;
 }
@@ -217,9 +210,6 @@ header {
   margin: 0 auto;
   padding: 60px 0;
 }
-.about-me {
-  /* padding: 80px 30px; */
-}
 .about-me img {
   width: 256px;
   text-align: center;
@@ -233,6 +223,7 @@ header {
   margin: 0 auto;
   margin-top: 30px;
 }
+
 /* Projects
 ------------------------------------*/
 .projects {
