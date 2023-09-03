@@ -24,48 +24,50 @@
       <!-- ***************  ABOUT / PROFILE  **************** -->
       <header>
         <nav class="top-menu-mobile">
+          <div class="mobile-links-container hidden">
+            <div class="mobile-links center">
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
           <div class="menu-button-container">
             <div class="menu-button"></div>
+            <div class="menu-close-button hidden">X</div>
           </div>
-
-          <ul>
-            <li>
-              <a href="#top"
-                ><img
-                  src="images/arrow-up.png"
-                  width="24"
-                  height="24"
-                  alt="home"
-              /></a>
-            </li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
         </nav>
         <nav class="top-menu-desktop">
-          <ul>
-            <li>
-              <a href="#top"
-                ><img
-                  src="images/arrow-up.png"
-                  width="24"
-                  height="24"
-                  alt="home"
-              /></a>
-            </li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+          <div class="desktop-links">
+            <ul>
+              <li>
+                <a href="#top"
+                  ><img
+                    src="images/arrow-up.png"
+                    width="24"
+                    height="24"
+                    alt="home"
+                /></a>
+              </li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </nav>
         <div class="content-wrap">
           <h1>Francisco Vargas</h1>
           <h2 class="light">Graphic Designer + Front-end Developer</h2>
         </div>
       </header>
+      <div class="up-button-container">
+        <a href="#top"
+          ><img src="images/arrow-up.png" width="32" height="32" alt="home"
+        /></a>
+      </div>
 
       <!--------------*** About Me  ***-------------->
 
@@ -445,6 +447,23 @@
       </footer>
     </main>
     <script>
+      const menuBtnContainer = document.querySelector(".menu-button-container");
+      const menuContainer = document.querySelector(".mobile-links-container");
+      const menuBtn = document.querySelector(".menu-button");
+      const menuCloseBtn = document.querySelector(".menu-close-button");
+
+      const menuElements = [menuContainer, menuBtn, menuCloseBtn];
+
+      menuBtnContainer.addEventListener("click", function () {
+        for (let i = 0; i < menuElements.length; i++) {
+          if (menuElements[i].classList.contains("hidden")) {
+            menuElements[i].classList.remove("hidden");
+          } else {
+            menuElements[i].classList.add("hidden");
+          }
+        }
+      });
+
       function myFunction(imgs) {
         var expandImg = document.getElementById("expandedImg");
         var fullImage = document.querySelectorAll(".fullSize");
