@@ -1,36 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Francisco Vargas, Artist + Front-end Developer</title>
-    <link rel="icon" href="favicon.ico">
-         <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu&display=swap" rel="stylesheet">
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous"
-          referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <main>
       <!-- ***************  ABOUT / PROFILE  **************** -->
       <header>
+        <nav class="top-menu">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
         <div class="content-wrap">
           <h1>Francisco Vargas</h1>
-          <h2>Graphic Designer + Front-end Developer</h2>
-
-          <p>Web developer with experience in programming and graphic design. 10+ years of experience developing sites for mobile devices and advertising banners. I dedicate my free time into illustration and with the years I've turned that skill into another job experience.</p>
+          <h2 class="light">Graphic Designer + Front-end Developer</h2>
         </div>
       </header>
 
       <!--------------*** PROJECTS / PORTFOLIO  ***-------------->
-      <section class="projects">
+      <section id="about" class="about-me">
+        <div>
+          <img src="me.jpg" alt="" />
+          <p>
+            Hi, I'm a web developer with experience in programming and graphic
+            design. 10+ years of experience developing sites for mobile devices
+            and advertising banners. I dedicate my free time into illustration
+            and with the years I've turned that skill into another job
+            experience.
+          </p>
+        </div>
+      </section>
+      <section id="skills" class="projects">
         <div class="content-wrap divider">
           <!-- Project 1 -->
           <section class="project-item">
             <h3>Web Foundations - HTML, CSS and JavaScript</h3>
-            <p>Developed content and construction of several websites from scratch, including the basic programming like boiler plates in HTML, beautify proccess with CSS and interactive features with javascript. But is not only the programming, but also the creation of templates and layouts from graphic software like Photoshop or Sketch.</p>
+            <p>
+              Developed content and construction of several websites from
+              scratch, including the basic programming like boiler plates in
+              HTML, beautify proccess with CSS and interactive features with
+              javascript. But is not only the programming, but also the creation
+              of templates and layouts from graphic software like Photoshop or
+              Sketch.
+            </p>
 
             <div class="skills">
               <div class="skill">
@@ -64,7 +96,13 @@
           <section class="project-item">
             <h3>Web animations</h3>
 
-            <p>With the arrival of multiple devices capable of surfing the web, I have developed and improved my skills in HTML5 and CSS3, as well as the requirements for responsive layouts and disabled friendly sites. And as a creative I find myself comfortable dealing with web animations with libraries such as jQuery and Gsap.</p>
+            <p>
+              With the arrival of multiple devices capable of surfing the web, I
+              have developed and improved my skills in HTML5 and CSS3, as well
+              as the requirements for responsive layouts and disabled friendly
+              sites. And as a creative I find myself comfortable dealing with
+              web animations with libraries such as jQuery and Gsap.
+            </p>
             <div class="skills">
               <div class="skill">
                 <p>JQuery</p>
@@ -91,7 +129,9 @@
                 </div>
               </div>
             </div>
-            <p class="align-right"><a href="animations.html">See some animations examples</a></p>
+            <p class="align-right">
+              <a href="animations.html">See some animations examples</a>
+            </p>
           </section>
 
           <!-- Project 3 -->
@@ -99,7 +139,11 @@
           <section class="project-item">
             <h3>Getting deeper, pre-processors and frameworks</h3>
 
-            <p>Latest in my learning path are the js frameworks, I've developed proyects with Vue.js and Angular at maintenance projects; being React my latest entry.</p>
+            <p>
+              Latest in my learning path are the js frameworks, I've developed
+              proyects with Vue.js and Angular at maintenance projects; being
+              React my latest entry.
+            </p>
 
             <div class="skills">
               <div class="skill">
@@ -127,48 +171,88 @@
                 </div>
               </div>
             </div>
-        </section>
+          </section>
 
-        <!-- Project 4 -->
+          <!-- Project 4 -->
 
           <section class="project-item">
             <h3>Illustration</h3>
 
-            <p>Finally is the illustration as my main hobby which I managed to carry on my professional journey. Everything from logos to cartoon comissions is available from my art.</p>
+            <p>
+              Finally is the illustration as my main hobby which I managed to
+              carry on my professional journey. Everything from logos to cartoon
+              comissions is available from my art.
+            </p>
             <div class="drawing-main-container">
-                <div class="illustrations">
-                  <div class="drawing">
-                    <img src="images/Chisco_approves.jpg" width="128" alt="thumbnail" onclick="myFunction(this);">
-                  </div>
-                  <div class="drawing">
-                    <img src="images/CoolCola-01.jpg" width="128" alt="thumbnail" onclick="myFunction(this);">
-                  </div>
-                  <div class="drawing">
-                    <img src="images/Dantas_logo.jpg" width="128" alt="thumbnail" onclick="myFunction(this);">
-                  </div>
+              <div class="illustrations">
+                <div class="drawing">
+                  <img
+                    src="images/Chisco_approves.jpg"
+                    width="128"
+                    alt="thumbnail"
+                    onclick="myFunction(this);"
+                  />
                 </div>
+                <div class="drawing">
+                  <img
+                    src="images/CoolCola-01.jpg"
+                    width="128"
+                    alt="thumbnail"
+                    onclick="myFunction(this);"
+                  />
+                </div>
+                <div class="drawing">
+                  <img
+                    src="images/Dantas_logo.jpg"
+                    width="128"
+                    alt="thumbnail"
+                    onclick="myFunction(this);"
+                  />
+                </div>
+              </div>
 
-                <div class="illustrations">
-                  <div class="drawing">
-                    <img src="images/fundapez.jpg" width="128" alt="thumbnail" onclick="myFunction(this);">
-                  </div>
-                  <div class="drawing">
-                    <img src="images/img088-01_small.jpg" height="128"  alt="thumbnail" onclick="myFunction(this);">
-                  </div>
-                  <div class="drawing">
-                    <img src="images/img096color.jpg" width="128" alt="thumbnail" onclick="myFunction(this);">
-                  </div>
+              <div class="illustrations">
+                <div class="drawing">
+                  <img
+                    src="images/fundapez.jpg"
+                    width="128"
+                    alt="thumbnail"
+                    onclick="myFunction(this);"
+                  />
                 </div>
+                <div class="drawing">
+                  <img
+                    src="images/img088-01_small.jpg"
+                    height="128"
+                    alt="thumbnail"
+                    onclick="myFunction(this);"
+                  />
+                </div>
+                <div class="drawing">
+                  <img
+                    src="images/img096color.jpg"
+                    width="128"
+                    alt="thumbnail"
+                    onclick="myFunction(this);"
+                  />
+                </div>
+              </div>
             </div>
             <div class="container">
-              <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-              <img id="expandedImg">
+              <span
+                onclick="this.parentElement.style.display='none'"
+                class="closebtn"
+                >&times;</span
+              >
+              <img id="expandedImg" />
               <div id="imgtext"></div>
             </div>
-            <p class="align-right"><a href="https://www.deviantart.com/chisco" target="_blank">See more of my work</a></p>
-        </section>
-
-
+            <p class="align-right">
+              <a href="https://www.deviantart.com/chisco" target="_blank"
+                >See more of my work</a
+              >
+            </p>
+          </section>
         </div>
       </section>
 
@@ -176,58 +260,83 @@
       <section class="work-experience">
         <div class="content-wrap item-details divider">
           <h2>Work Experience</h2>
-          <p>See my complete work history on <a href="https://www.linkedin.com/in/francisco-vargas-469630bb/">LinkedIn</a>.</p>
+          <p>
+            See my complete work history on
+            <a href="https://www.linkedin.com/in/francisco-vargas-469630bb/"
+              >LinkedIn</a
+            >.
+          </p>
 
           <!-- Job 1 -->
           <section class="job-item">
-               <div class="job-details">
-                    <h3>Front-end Developer</h3>
-                    <p><a href="https://www.prodigious.com/">Prodigious - PGD</a></p>
-                    <p>October 2015 - Present</p>
-               </div>
-               <div class="job-summary">
-                  <ul>
-                      <li>Maintenance and front end development of sites in cms AEM.</li>
-                      <li>Creation of animated banners in HTML5. Greensock and CSS3. Both fixed and dynamic animations.</li>
-                      <li>Certified in Google DoubleClick.</li>
-                      <li>Banners on FlashTalking platform.</li>
-                  </ul>
-               </div>
+            <div class="job-details">
+              <h3>Front-end Developer</h3>
+              <p><a href="https://www.prodigious.com/">Prodigious - PGD</a></p>
+              <p>October 2015 - Present</p>
+            </div>
+            <div class="job-summary">
+              <ul>
+                <li>
+                  Maintenance and front end development of sites in cms AEM.
+                </li>
+                <li>
+                  Creation of animated banners in HTML5. Greensock and CSS3.
+                  Both fixed and dynamic animations.
+                </li>
+                <li>Certified in Google DoubleClick.</li>
+                <li>Banners on FlashTalking platform.</li>
+              </ul>
+            </div>
           </section>
 
           <!-- Job 2 -->
           <section class="job-item">
-               <div class="job-details">
-                    <h3>Web content developer</h3>
-                    <p><a href="https://www.accenture.com/">Accenture</a></p>
-                    <p>December 2012 - October 2015</p>
-               </div>
-               <div class="job-summary">
-                    <ul>
-                      <li>Development of Ipad sites for Merck Sharp and Dohme.</li>
-                      <li>National Bank of Canada: Static site content migration to Adobe CQ5 CMS.</li>
-                      <li>Quality assurance of the General Electric site.</li>
-                      <li>Dupont content manager using CMS CQ5.</li>
-                      <li>Front End Developer; bootstrap, css preprocessors, automation with Grunt along with HTML5 and CSS3.</li>
-                    </ul>
-               </div>
+            <div class="job-details">
+              <h3>Web content developer</h3>
+              <p><a href="https://www.accenture.com/">Accenture</a></p>
+              <p>December 2012 - October 2015</p>
+            </div>
+            <div class="job-summary">
+              <ul>
+                <li>Development of Ipad sites for Merck Sharp and Dohme.</li>
+                <li>
+                  National Bank of Canada: Static site content migration to
+                  Adobe CQ5 CMS.
+                </li>
+                <li>Quality assurance of the General Electric site.</li>
+                <li>Dupont content manager using CMS CQ5.</li>
+                <li>
+                  Front End Developer; bootstrap, css preprocessors, automation
+                  with Grunt along with HTML5 and CSS3.
+                </li>
+              </ul>
+            </div>
           </section>
 
           <!-- Job 3 -->
           <section class="job-item">
-               <div class="job-details">
-                    <h3>Web Designer</h3>
-                    <p><a href="https://www.arweb.com/">ARWEB.com</a></p>
-                    <p>May 2011 - July 2012</p>
-               </div>
-               <div class="job-summary">
-                    <ul>
-                      <li>Maintenance and bug fixes for existing web applications.</li>
-                      <li>Creation of icons for the Windows platform.</li>
-                      <li>Creation and design of websites from scratch. From design templates to their respective web migration using basic HTML and CSS.</li>
-                      <li>Use of cms and blogs to maintain websites. Responsible for maintenance and troubleshooting.</li>
-                    </ul>
-               </div>
+            <div class="job-details">
+              <h3>Web Designer</h3>
+              <p><a href="https://www.arweb.com/">ARWEB.com</a></p>
+              <p>May 2011 - July 2012</p>
+            </div>
+            <div class="job-summary">
+              <ul>
+                <li>
+                  Maintenance and bug fixes for existing web applications.
+                </li>
+                <li>Creation of icons for the Windows platform.</li>
+                <li>
+                  Creation and design of websites from scratch. From design
+                  templates to their respective web migration using basic HTML
+                  and CSS.
+                </li>
+                <li>
+                  Use of cms and blogs to maintain websites. Responsible for
+                  maintenance and troubleshooting.
+                </li>
+              </ul>
+            </div>
           </section>
         </div>
       </section>
@@ -245,19 +354,27 @@
 
           <section>
             <h3>Certifications</h3>
-                <ul>
-                <li>LinkedIn Learning, Front-end Developer career path. 2022.</li>
-                <li>Flashtalking Hub Course. 2020.</li>
-                <li>Udemy certification, Vue and Vuex. 2020.</li>
-                <li>Google Dynamic certified, 2017.</li>
-                <li>Incecom, Basic SQL data base programing. 2016.</li>
-                <li>Incecom, Basic programming technic in C++, 40 hours. 2014.</li>
-                <li>Ulacit: Javascript. 20 hours. 2013.</li>
-                <li>Instituto costarricense norteamericano. English Now Program, 18 months. 2012.</li>
-                <li>CyberU: Introduction to CSS, 24 hours. 2011.</li>
-                <li>CyberU: Introduction to HTML and XHTML, 24 hours. 2011.</li>
-                <li>Instituto Profesional en Computación (IPC) Web page design, Dreamweaver, Fireworks, Flash; august – December 2009.</li>
-                </ul>
+            <ul>
+              <li>LinkedIn Learning, Front-end Developer career path. 2022.</li>
+              <li>Flashtalking Hub Course. 2020.</li>
+              <li>Udemy certification, Vue and Vuex. 2020.</li>
+              <li>Google Dynamic certified, 2017.</li>
+              <li>Incecom, Basic SQL data base programing. 2016.</li>
+              <li>
+                Incecom, Basic programming technic in C++, 40 hours. 2014.
+              </li>
+              <li>Ulacit: Javascript. 20 hours. 2013.</li>
+              <li>
+                Instituto costarricense norteamericano. English Now Program, 18
+                months. 2012.
+              </li>
+              <li>CyberU: Introduction to CSS, 24 hours. 2011.</li>
+              <li>CyberU: Introduction to HTML and XHTML, 24 hours. 2011.</li>
+              <li>
+                Instituto Profesional en Computación (IPC) Web page design,
+                Dreamweaver, Fireworks, Flash; august – December 2009.
+              </li>
+            </ul>
           </section>
         </div>
       </section>
@@ -270,9 +387,23 @@
           <!-- Social media and contact links. Add or remove any networks. -->
           <ul class="contact-list">
             <li><a href="mailto:fralva86@gmail.com">fralva86@gmail.com</a></li>
-            <li><a href="https://www.deviantart.com/chisco" target="_blank">DeviantArt</a></li>
-            <li><a href="https://www.facebook.com/chisco.maniaco/" target="_blank">Facebook</a></li>
-            <li><a href="https://www.linkedin.com/in/francisco-vargas-469630bb/" target="_blank">LinkedIn</a></li>
+            <li>
+              <a href="https://www.deviantart.com/chisco" target="_blank"
+                >DeviantArt</a
+              >
+            </li>
+            <li>
+              <a href="https://www.facebook.com/chisco.maniaco/" target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/francisco-vargas-469630bb/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
           </ul>
         </div>
       </footer>
@@ -280,7 +411,7 @@
     <script>
       function myFunction(imgs) {
         var expandImg = document.getElementById("expandedImg");
-        var fullImage = document.querySelectorAll(".fullSize")
+        var fullImage = document.querySelectorAll(".fullSize");
         var imgText = document.getElementById("imgtext");
         expandImg.src = imgs.src;
         expandImg.parentElement.style.display = "block";
