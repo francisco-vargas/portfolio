@@ -92,36 +92,60 @@ header {
   );
   color: #f7fff7;
 }
-.top-menu {
-  background: rgba(58, 85, 149, 0.5);
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+.top-menu-desktop {
+  background: rgba(58, 85, 149, 0.4);
   padding: 20px;
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   z-index: 10;
+  display: none;
 }
-.top-menu:hover {
+.top-menu-desktop:hover {
   background: rgba(58, 85, 149, 0.8);
 }
-.top-menu ul {
+.top-menu-desktop img {
+  position: relative;
+  top: 5px;
+}
+.top-menu-desktop ul {
   float: right;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.top-menu ul li {
+.top-menu-desktop ul li {
   display: inline-block;
   margin-right: 2rem;
 }
-.top-menu ul li a {
+.top-menu-desktop ul li a {
   color: #fff;
 }
 .content-wrap {
   max-width: 800px;
   width: 85%;
   margin: 0 auto;
-  margin-top: 60px;
   padding: 60px 0;
 }
 .about-me {
@@ -348,6 +372,15 @@ footer {
 
 /* Responsive
 ------------------------------------*/
+@media screen and (min-width: 768) {
+  .top-menu-desktop {
+    display: block;
+  }
+  .top-menu-mobile {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .job-item {
     display: grid;
@@ -395,7 +428,7 @@ footer {
     text-align: center;
   }
   header h1 {
-    font-size: 65px;
+    font-size: 3rem;
   }
   header h2 {
     font-size: 30px;
