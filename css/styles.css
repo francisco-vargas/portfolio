@@ -8,9 +8,9 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
+  background: rgba(58, 85, 149, 1);
   color: #343434;
   margin: 0;
   padding: 0;
@@ -42,12 +42,6 @@ header h1 {
 header h2 {
   margin: 30px 0;
 }
-.content-wrap {
-  max-width: 800px;
-  width: 85%;
-  margin: 0 auto;
-  padding: 60px 0;
-}
 a {
   text-decoration: none;
   list-style: none;
@@ -58,7 +52,9 @@ a {
 .center {
   text-align: center;
 }
-
+.white-bg {
+  background-color: #fff;
+}
 .item-details h3 + p {
   font-style: italic;
 }
@@ -88,8 +84,25 @@ a {
 /* Header
 ------------------------------------*/
 header {
-  background: #2f3061;
+  background: rgba(47, 48, 97, 1);
+  background: linear-gradient(
+    0deg,
+    rgba(47, 48, 97, 1) 0%,
+    rgba(58, 85, 149, 1) 100%
+  );
   color: #f7fff7;
+}
+.top-menu {
+  background: rgba(58, 85, 149, 0.5);
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}
+.top-menu:hover {
+  background: rgba(58, 85, 149, 0.8);
 }
 .top-menu ul {
   float: right;
@@ -104,7 +117,28 @@ header {
 .top-menu ul li a {
   color: #fff;
 }
-
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 60px 0;
+}
+.about-me {
+  padding: 80px 30px;
+}
+.about-me img {
+  width: 256px;
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+  border-radius: 50%;
+  border: 12px solid #2f3061;
+}
+.description {
+  max-width: 700px;
+  margin: 0 auto;
+}
 /* Projects
 ------------------------------------*/
 .projects {
