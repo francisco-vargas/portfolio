@@ -7,21 +7,20 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu&display=swap"
       rel="stylesheet"
     />
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
-      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      src="https://kit.fontawesome.com/a874f68b41.js"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     ></script>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <main>
-      <!-- ***************  ABOUT / PROFILE  **************** -->
+      <!--------------*** Header  ***-------------->
       <header>
         <nav class="top-menu-mobile">
           <div class="mobile-links-container hidden">
@@ -59,8 +58,22 @@
           </div>
         </nav>
         <div class="content-wrap">
-          <h1>Francisco Vargas</h1>
-          <h2 class="light">Graphic Designer + Front-end Developer</h2>
+          <div class="logo-name">
+            <div class="header-logo">
+              <img
+                src="images/screen-brush-color.png"
+                width="256"
+                height="256"
+                alt="web development and design"
+              />
+            </div>
+            <div class="name">
+              <h1>Francisco Vargas</h1>
+            </div>
+          </div>
+          <h2 class="light center">
+            Graphic Designer&nbsp;+ Front-end Developer
+          </h2>
         </div>
       </header>
       <div class="up-button-container">
@@ -91,6 +104,7 @@
       <!--------------*** Skills  ***-------------->
       <section id="skills" class="projects">
         <div class="content-wrap divider">
+          <h2>My skills</h2>
           <!-- Project 1 -->
           <section class="project-item">
             <h3>Web Foundations - HTML, CSS and JavaScript</h3>
@@ -176,7 +190,7 @@
           <!-- Project 3 -->
 
           <section class="project-item">
-            <h3>Getting deeper, pre-processors and frameworks</h3>
+            <h3>Getting deeper, libraries and frameworks</h3>
 
             <p>
               Latest in my learning path are the js frameworks, I've developed
@@ -188,7 +202,7 @@
               <div class="skill">
                 <p>Angular</p>
                 <div class="progress-bar-bg">
-                  <div class="progress-bar-color familiar"></div>
+                  <div class="progress-bar-color beginner"></div>
                 </div>
               </div>
               <div class="skill">
@@ -200,278 +214,164 @@
               <div class="skill">
                 <p>React</p>
                 <div class="progress-bar-bg">
-                  <div class="progress-bar-color beginner"></div>
+                  <div class="progress-bar-color familiar"></div>
                 </div>
               </div>
               <div class="skill">
                 <p>Node</p>
                 <div class="progress-bar-bg">
-                  <div class="progress-bar-color beginner"></div>
+                  <div class="progress-bar-color familiar"></div>
                 </div>
               </div>
             </div>
-          </section>
-
-          <!-- Project 4 -->
-
-          <section id="portfolio" class="project-item">
-            <h3>Illustration</h3>
-
-            <p>
-              Finally is the illustration as my main hobby which I managed to
-              carry on my professional journey. Everything from logos to cartoon
-              comissions is available from my art.
-            </p>
-            <div class="drawing-main-container">
-              <div class="illustrations">
-                <div class="drawing">
-                  <img
-                    src="images/Chisco_approves.jpg"
-                    width="128"
-                    alt="thumbnail"
-                    onclick="myFunction(this);"
-                  />
-                </div>
-                <div class="drawing">
-                  <img
-                    src="images/CoolCola-01.jpg"
-                    width="128"
-                    alt="thumbnail"
-                    onclick="myFunction(this);"
-                  />
-                </div>
-                <div class="drawing">
-                  <img
-                    src="images/Dantas_logo.jpg"
-                    width="128"
-                    alt="thumbnail"
-                    onclick="myFunction(this);"
-                  />
-                </div>
-              </div>
-
-              <div class="illustrations">
-                <div class="drawing">
-                  <img
-                    src="images/fundapez.jpg"
-                    width="128"
-                    alt="thumbnail"
-                    onclick="myFunction(this);"
-                  />
-                </div>
-                <div class="drawing">
-                  <img
-                    src="images/img088-01_small.jpg"
-                    height="128"
-                    alt="thumbnail"
-                    onclick="myFunction(this);"
-                  />
-                </div>
-                <div class="drawing">
-                  <img
-                    src="images/img096color.jpg"
-                    width="128"
-                    alt="thumbnail"
-                    onclick="myFunction(this);"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="container">
-              <span
-                onclick="this.parentElement.style.display='none'"
-                class="closebtn"
-                >&times;</span
-              >
-              <img id="expandedImg" />
-              <div id="imgtext"></div>
-            </div>
-            <p class="align-right">
-              <a href="https://www.deviantart.com/chisco" target="_blank"
-                >See more of my work</a
-              >
-            </p>
           </section>
         </div>
       </section>
+      <section id="portfolio" class="project-item white-bg">
+        <div class="content-wrap divider">
+          <h2>My projects</h2>
+          <h3>Illustration</h3>
 
-      <!-- ****************  WORK EXPERIENCE  ******************** -->
-      <section class="work-experience">
-        <div class="content-wrap item-details divider">
-          <h2>Work Experience</h2>
           <p>
-            See my complete work history on
-            <a href="https://www.linkedin.com/in/francisco-vargas-469630bb/"
-              >LinkedIn</a
-            >.
+            Finally is the illustration as my main hobby which I managed to
+            carry on my professional journey. Everything from logos to cartoon
+            comissions is available from my art.
           </p>
-
-          <!-- Job 1 -->
-          <section class="job-item">
-            <div class="job-details">
-              <h3>Front-end Developer</h3>
-              <p><a href="https://www.prodigious.com/">Prodigious - PGD</a></p>
-              <p>October 2015 - Present</p>
+          <div class="drawing-main-container">
+            <div class="illustrations">
+              <div class="drawing">
+                <img
+                  src="images/Chisco_approves.jpg"
+                  width="128"
+                  alt="thumbnail"
+                  onclick="myFunction(this);"
+                />
+              </div>
+              <div class="drawing">
+                <img
+                  src="images/CoolCola-01.jpg"
+                  width="128"
+                  alt="thumbnail"
+                  onclick="myFunction(this);"
+                />
+              </div>
+              <div class="drawing">
+                <img
+                  src="images/Dantas_logo.jpg"
+                  width="128"
+                  alt="thumbnail"
+                  onclick="myFunction(this);"
+                />
+              </div>
             </div>
-            <div class="job-summary">
-              <ul>
-                <li>
-                  Maintenance and front end development of sites in cms AEM.
-                </li>
-                <li>
-                  Creation of animated banners in HTML5. Greensock and CSS3.
-                  Both fixed and dynamic animations.
-                </li>
-                <li>Certified in Google DoubleClick.</li>
-                <li>Banners on FlashTalking platform.</li>
-              </ul>
-            </div>
-          </section>
 
-          <!-- Job 2 -->
-          <section class="job-item">
-            <div class="job-details">
-              <h3>Web content developer</h3>
-              <p><a href="https://www.accenture.com/">Accenture</a></p>
-              <p>December 2012 - October 2015</p>
+            <div class="illustrations">
+              <div class="drawing">
+                <img
+                  src="images/fundapez.jpg"
+                  width="128"
+                  alt="thumbnail"
+                  onclick="myFunction(this);"
+                />
+              </div>
+              <div class="drawing">
+                <img
+                  src="images/img088-01_small.jpg"
+                  height="128"
+                  alt="thumbnail"
+                  onclick="myFunction(this);"
+                />
+              </div>
+              <div class="drawing">
+                <img
+                  src="images/img096color.jpg"
+                  width="128"
+                  alt="thumbnail"
+                  onclick="myFunction(this);"
+                />
+              </div>
             </div>
-            <div class="job-summary">
-              <ul>
-                <li>Development of Ipad sites for Merck Sharp and Dohme.</li>
-                <li>
-                  National Bank of Canada: Static site content migration to
-                  Adobe CQ5 CMS.
-                </li>
-                <li>Quality assurance of the General Electric site.</li>
-                <li>Dupont content manager using CMS CQ5.</li>
-                <li>
-                  Front End Developer; bootstrap, css preprocessors, automation
-                  with Grunt along with HTML5 and CSS3.
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          <!-- Job 3 -->
-          <section class="job-item">
-            <div class="job-details">
-              <h3>Web Designer</h3>
-              <p><a href="https://www.arweb.com/">ARWEB.com</a></p>
-              <p>May 2011 - July 2012</p>
-            </div>
-            <div class="job-summary">
-              <ul>
-                <li>
-                  Maintenance and bug fixes for existing web applications.
-                </li>
-                <li>Creation of icons for the Windows platform.</li>
-                <li>
-                  Creation and design of websites from scratch. From design
-                  templates to their respective web migration using basic HTML
-                  and CSS.
-                </li>
-                <li>
-                  Use of cms and blogs to maintain websites. Responsible for
-                  maintenance and troubleshooting.
-                </li>
-              </ul>
-            </div>
-          </section>
-        </div>
-      </section>
-
-      <!-- *************  EDUCATION & CERTIFICATIONS *********** -->
-      <section class="education">
-        <div class="content-wrap item-details">
-          <h2>Education</h2>
-
-          <section>
-            <h3>Universidad Hispanoamericana – San José, Costa Rica.</h3>
-            <p>Bachelor of Arts: Advertising Design, 2010</p>
-            <p>Complete course for the Graphic Designer career.</p>
-          </section>
-
-          <section>
-            <h3>Certifications</h3>
-            <ul>
-              <li>LinkedIn Learning, Front-end Developer career path. 2022.</li>
-              <li>Flashtalking Hub Course. 2020.</li>
-              <li>Udemy certification, Vue and Vuex. 2020.</li>
-              <li>Google Dynamic certified, 2017.</li>
-              <li>Incecom, Basic SQL data base programing. 2016.</li>
-              <li>
-                Incecom, Basic programming technic in C++, 40 hours. 2014.
-              </li>
-              <li>Ulacit: Javascript. 20 hours. 2013.</li>
-              <li>
-                Instituto costarricense norteamericano. English Now Program, 18
-                months. 2012.
-              </li>
-              <li>CyberU: Introduction to CSS, 24 hours. 2011.</li>
-              <li>CyberU: Introduction to HTML and XHTML, 24 hours. 2011.</li>
-              <li>
-                Instituto Profesional en Computación (IPC) Web page design,
-                Dreamweaver, Fireworks, Flash; august – December 2009.
-              </li>
-            </ul>
-          </section>
+          </div>
+          <div class="container">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="closebtn"
+              >&times;</span
+            >
+            <img id="expandedImg" />
+            <div id="imgtext"></div>
+          </div>
+          <p class="align-right">
+            <a href="https://www.deviantart.com/chisco" target="_blank"
+              >See more of my work</a
+            >
+          </p>
         </div>
       </section>
 
       <!-- ************  CONTACT INFO / SOCIAL MEDIA  ************ -->
       <footer id="contact">
         <div class="content-wrap">
-          <h2>Let's Keep in Touch!</h2>
+          <h2 class="center">Let's Keep in Touch!</h2>
 
           <!-- Social media and contact links. Add or remove any networks. -->
+          <a class="mail" href="mailto:fralva86@gmail.com"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 512 512"
+            >
+              <style>
+                svg {
+                  fill: #ffffff;
+                }
+              </style>
+              <path
+                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+              />
+            </svg>
+            Contact me</a
+          >
           <ul class="contact-list">
-            <li><a href="mailto:fralva86@gmail.com">fralva86@gmail.com</a></li>
             <li>
               <a href="https://www.deviantart.com/chisco" target="_blank"
-                >DeviantArt</a
-              >
+                ><i class="fa fa-solid fa-deviantart" aria-hidden="true"></i
+              ></a>
             </li>
             <li>
-              <a href="https://www.facebook.com/chisco.maniaco/" target="_blank"
-                >Facebook</a
-              >
+              <a href="https://github.com/francisco-vargas" target="_blank"
+                ><i class="fa fa-github" aria-hidden="true"></i
+              ></a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/in/francisco-vargas-469630bb/"
                 target="_blank"
-                >LinkedIn</a
-              >
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
             </li>
           </ul>
         </div>
+        <p class="copyright">
+          Made by Francisco Vargas
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 512 512"
+          >
+            <style>
+              svg {
+                fill: #ffffff;
+              }
+            </style>
+            <path
+              d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z"
+            />
+          </svg>
+          2022
+        </p>
       </footer>
     </main>
-    <script>
-      const menuBtnContainer = document.querySelector(".menu-button-container");
-      const menuContainer = document.querySelector(".mobile-links-container");
-      const menuBtn = document.querySelector(".menu-button");
-      const menuCloseBtn = document.querySelector(".menu-close-button");
-
-      const menuElements = [menuContainer, menuBtn, menuCloseBtn];
-
-      menuBtnContainer.addEventListener("click", function () {
-        for (let i = 0; i < menuElements.length; i++) {
-          if (menuElements[i].classList.contains("hidden")) {
-            menuElements[i].classList.remove("hidden");
-          } else {
-            menuElements[i].classList.add("hidden");
-          }
-        }
-      });
-
-      function myFunction(imgs) {
-        var expandImg = document.getElementById("expandedImg");
-        var fullImage = document.querySelectorAll(".fullSize");
-        var imgText = document.getElementById("imgtext");
-        expandImg.src = imgs.src;
-        expandImg.parentElement.style.display = "block";
-      }
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
