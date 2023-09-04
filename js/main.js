@@ -2,6 +2,7 @@ const menuBtnContainer = document.querySelector(".menu-button-container");
 const menuContainer = document.querySelector(".mobile-links-container");
 const menuBtn = document.querySelector(".menu-button");
 const menuCloseBtn = document.querySelector(".menu-close-button");
+const topMenuDesktop = document.querySelector(".top-menu-desktop");
 
 const menuElements = [menuContainer, menuBtn, menuCloseBtn];
 
