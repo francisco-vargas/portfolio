@@ -1,9 +1,11 @@
 // Definimos las imágenes de la galería
 const imageUrls = [
-    "https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg",
-    "https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg",
-    "https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg",
-    "https://images.pexels.com/photos/2882361/pexels-photo-2882361.jpeg",
+    "images/portfolio/botanique.jpg",
+    "images/portfolio/englandtrip.jpg",
+    "images/portfolio/everyday.jpg",
+    "images/portfolio/little-pea.jpg",
+    "images/portfolio/TheAnalog.jpg",
+    "images/portfolio/yoko.jpg"
   ];
   
   // Recopilamos todas las imágenes con la clase "lightbox-image"
@@ -52,6 +54,6 @@ const imageUrls = [
       slides[i].style.display = "none";
     }
   
-    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].style.display = "flex";
   }
   

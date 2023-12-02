@@ -259,8 +259,10 @@ header h1 {
   background: rgba(47, 48, 97, 80%);
 }
 .project-item {
-  min-height: 500px;
   overflow: hidden;
+}
+.my-portfolio {
+  min-height: 700px;
 }
 .project-item h3 {
   margin-top: 0;

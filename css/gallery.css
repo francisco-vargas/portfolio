@@ -41,7 +41,7 @@
     background-color: #ccc;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     .tab {
       flex-direction: column;
     }
