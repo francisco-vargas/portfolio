@@ -14,6 +14,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
   </head>
 
   <body>
@@ -225,81 +227,158 @@
       <section id="portfolio" class="project-item white-bg">
         <div class="content-wrap divider">
           <h2>My projects</h2>
-          <h3>Illustration</h3>
-
-          <p>
-            The illustration as my main hobby which I managed to carry on my
-            professional journey. Everything from logos to cartoon comissions is
-            available from my art.
-          </p>
-          <div class="drawing-main-container">
-            <div class="illustrations">
-              <div class="drawing">
-                <img
-                  src="https://raw.githubusercontent.com/francisco-vargas/portfolio-images/main/Chisco_approves.jpg?token=GHSAT0AAAAAACHCQI3WG3HTPF65A6JBWMSAZHXTC5A"
-                  width="128"
-                  alt="thumbnail"
-                  onclick="myFunction(this);"
-                />
-              </div>
-              <div class="drawing">
-                <img
-                  src="https://raw.githubusercontent.com/francisco-vargas/portfolio-images/main/CoolCola-01.jpg?token=GHSAT0AAAAAACHCQI3W3QYC7XOWUPTTMIF2ZHXTDRQ"
-                  width="128"
-                  alt="thumbnail"
-                  onclick="myFunction(this);"
-                />
-              </div>
-              <div class="drawing">
-                <img
-                  src="https://raw.githubusercontent.com/francisco-vargas/portfolio-images/main/Dantas_logo.jpg?token=GHSAT0AAAAAACHCQI3XGVIK6SD34PQMMU5WZHXTEFA"
-                  width="128"
-                  alt="thumbnail"
-                  onclick="myFunction(this);"
-                />
+          <div class="tab">
+            <div class="tabitem">
+              <button class="tablinks">Proyect 1</button>
+              <div class="tabContainer">
+                <div class="tabContent">
+                  <h3>HTML pages</h3>
+                  <div class="row">
+                    <div class="col">
+                      <img
+                        src=""
+                        onclick="openLightbox(); toSlide()"
+                        class="hover-shadow preview lightbox-image"
+                      />
+                    </div>
+                    <div class="col">
+                      <img
+                        src=""
+                        onclick="openLightbox(); toSlide()"
+                        class="hover-shadow preview lightbox-image"
+                      />
+                    </div>
+                    <div class="col">
+                      <img
+                        src=""
+                        onclick="openLightbox(); toSlide()"
+                        class="hover-shadow preview lightbox-image"
+                      />
+                    </div>
+                    <div class="col">
+                      <img
+                        src=""
+                        onclick="openLightbox(); toSlide()"
+                        class="hover-shadow preview lightbox-image"
+                      />
+                    </div>
+                  </div>
+              
+                  <div id="Lightbox" class="modal">
+                    <span class="close pointer" onclick="closeLightbox()">&times;</span>
+                    <div class="modal-content">
+                      <!-- Imagen 1 -->
+                      <div class="slide">
+                        <img
+                          src=""
+                          class="image-slide lightbox-image"
+                          alt="Toy car on the road."
+                        />
+                        <div class="caption">
+                          <h3>Título de la imagen 1</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                      </div>
+              
+                      <!-- Imagen 2 -->
+                      <div class="slide">
+                        <img
+                          src=""
+                          class="image-slide lightbox-image"
+                          alt="Toy car exploring offroad."
+                        />
+                        <div class="caption">
+                          <h3>Título de la imagen 2</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                      </div>
+              
+                      <!-- Imagen 3 -->
+                      <div class="slide">
+                        <img
+                          src=""
+                          class="image-slide lightbox-image"
+                          alt="Toy car in the city."
+                        />
+                        <div class="caption">
+                          <h3>Título de la imagen 3</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                      </div>
+              
+                      <!-- Imagen 4 -->
+                      <div class="slide">
+                        <img src="" class="image-slide lightbox-image" alt="Toy bike." />
+                        <div class="caption">
+                          <h3>Título de la imagen 4</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                      </div>
+              
+                      <!-- Botones de navegación -->
+                      <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+                      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div class="illustrations">
-              <div class="drawing">
-                <img
-                  src="https://raw.githubusercontent.com/francisco-vargas/portfolio-images/main/fundapez.jpg?token=GHSAT0AAAAAACHCQI3WLMCZCI6CS7EZIXOCZHXTEVA"
-                  width="128"
-                  alt="thumbnail"
-                  onclick="myFunction(this);"
-                />
+      
+            <div class="tabitem">
+              <button class="tablinks">Proyect 2</button>
+              <div class="tabContainer hidden">
+                <div class="tabContent">
+                  <h3>Proyect 2</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
               </div>
-              <div class="drawing">
-                <img
-                  src="https://raw.githubusercontent.com/francisco-vargas/portfolio-images/main/img088-01_small.jpg?token=GHSAT0AAAAAACHCQI3WPUWYINBYX2EUOZVGZHXTE7Q"
-                  height="128"
-                  alt="thumbnail"
-                  onclick="myFunction(this);"
-                />
+            </div>
+      
+            <div class="tabitem">
+              <button class="tablinks">Proyect 3</button>
+              <div class="tabContainer hidden">
+                <div class="tabContent">
+                  <h3>Proyect 3</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
               </div>
-              <div class="drawing">
-                <img
-                  src="https://raw.githubusercontent.com/francisco-vargas/portfolio-images/main/img096color.jpg?token=GHSAT0AAAAAACHCQI3XEW6VKHUI5LLXUCL6ZHXTFOA"
-                  width="128"
-                  alt="thumbnail"
-                  onclick="myFunction(this);"
-                />
+            </div>
+      
+            <div class="tabitem">
+              <button class="tablinks">Proyect 4</button>
+              <div class="tabContainer hidden">
+                <div class="tabContent">
+                  <h3>Proyect 4</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="container">
-            <span
-              onclick="this.parentElement.style.display='none'"
-              class="closebtn"
-              >&times;</span
-            >
-            <img id="expandedImg" />
-          </div>
-          <p class="align-right">
-            <a href="https://www.deviantart.com/chisco" target="_blank"
-              >See more of my work</a
-            >
-          </p>
+
         </div>
       </section>
 
@@ -367,5 +446,7 @@
       </footer>
     </main>
     <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/lightbox.js"></script>
   </body>
 </html>

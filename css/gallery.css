@@ -1,0 +1,52 @@
+  .tab {
+    display: flex;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    position: relative;
+  }
+  
+  .tabContainer {
+    position: absolute;
+    left: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    width: 100%;
+  }
+  
+  .tabContent {
+    padding: 10px 20px;
+  }
+  
+  .tabitem {
+    flex: 1;
+  }
+  
+  .tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  @media (max-width: 768px) {
+    .tab {
+      flex-direction: column;
+    }
+    .tabContainer {
+      position: relative;
+    }
+  }
+  
