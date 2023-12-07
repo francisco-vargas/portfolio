@@ -25,7 +25,7 @@
     display: none;
     position: fixed;
     z-index: 10;
-    padding: 10px 62px 0px 62px;
+    padding: 20px;
     left: 0;
     top: 0;
     width: 100%;
@@ -41,7 +41,7 @@
     justify-content: center;
     margin: auto;
     padding: 0 0 0 0;
-    width: 80%;
+    width: 100%;
     max-width: 1200px;
   }
   
@@ -51,7 +51,7 @@
   }
   
   .image-slide {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
   
@@ -72,9 +72,11 @@
     color: white;
     position: absolute;
     top: 10px;
-    right: 25px;
+    right: 5px;
     font-size: 35px;
+    line-height: 0.5;
     font-weight: bold;
+    -webkit-text-stroke: 1px black;
   }
   
   .close:hover,
@@ -90,15 +92,21 @@
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 16px;
+    padding: 5px 10px;
     margin-top: -50px;
     color: white;
     font-weight: bold;
     font-size: 20px;
+    line-height: 1;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
   }
   
   .next {
@@ -109,13 +117,14 @@
   .previous:hover,
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+    text-decoration: none !important;
   }
   
   .caption {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 10px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
   
@@ -133,11 +142,29 @@
     .thumb-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .modal-content {
+      width: 80%;
+    }
+    .close {
+        top: 20px;
+        right: -40px;
+    }
+    .previous,
+    .next {
+      font-size: 30px;
+    }
   }
 
   @media screen and (min-width: 960px) {
     .thumb-container {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .modal {
+      padding: 10px 60px 0px 60px;
+    }
+    .previous,
+    .next {
+      font-size: 40px;
     }
   }
   
